@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#C45A3B">
+    <title>OrçaObras - Offline</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Aptos Narrow', 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #F5F0EB 0%, #E8E0D8 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .offline-container {
+            background: white;
+            padding: 60px 40px;
+            border-radius: 20px;
+            text-align: center;
+            max-width: 400px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+        }
+        .offline-icon {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #C45A3B, #8B3A20);
+            border-radius: 24px;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+        }
+        h1 { color: #C45A3B; margin-bottom: 15px; font-size: 28px; }
+        p { color: #666; margin-bottom: 30px; line-height: 1.6; }
+        .retry-btn {
+            background: #C45A3B;
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .retry-btn:hover { background: #8B3A20; transform: translateY(-2px); }
+    </style>
+</head>
+<body>
+    <div class="offline-container">
+        <div class="offline-icon">📡</div>
+        <h1>Sem Conexão</h1>
+        <p>Você está offline. Verifique sua conexão com a internet e tente novamente.</p>
+        <button class="retry-btn" onclick="window.location.reload()">
+            <span>🔄 Tentar Novamente</span>
+        </button>
+    </div>
+</body>
+</html>
