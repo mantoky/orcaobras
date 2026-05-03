@@ -2,6 +2,9 @@ redirectsOrigin = "config"
 plugins = []
 headers = []
 
+[site]
+name = "orcaobras"
+
 [functions]
 
 [functions."*"]
